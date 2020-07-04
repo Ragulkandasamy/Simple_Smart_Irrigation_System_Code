@@ -1,0 +1,8 @@
+1. The sensor which is present in the soil detects the amount of moisture in the soil and sends the signal to the mh sensor and they both together acts as a soil moisture sensor. 
+2. After receiving the signal from the sensor it is transmitted to the Arduino UNO. 
+3. At once it checks with the threshold value which is given by us if the value of the moisture is less than our threshold value the motor starts pumping the water until the
+value of the moisture is equal or greater than the threshold value and the buzzer connected with the Arduino starts beeping the sound and the LED will starts emitting light. 
+4. At initially when the value is zero the sound of the buzzer will be loud and takes more time for each cycle and when the value is near to moisture content the sound will be
+low level for short time. If the value becomes higher then the  motor stops pumping the water along with no buzzer sound and LED glow. 
+5. And if the value of the sensor is high when it is placed there will no water service to the plants.
+6. It will be repeated until the values go high beyond the threshold value.
