@@ -1,0 +1,60 @@
+int sen=A0;
+
+int EN_A = 11; 
+int IN1 = 9;
+int IN2 = 8; 
+int led=7; 
+int buz=6;
+void setup() 
+{
+// put your setup code here, to run once: 
+Serial.begin(9600);
+pinMode(EN_A, OUTPUT); 
+pinMode(IN1, OUTPUT); 
+pinMode(IN2, OUTPUT); 
+pinMode(6, OUTPUT); 
+pinMode(7, OUTPUT); 
+pinMode(sen,INPUT);
+}
+
+void loop() { 
+// put your main code here, to run repeatedly: 
+int val=analogRead(A0);
+if(val > 485 && val < 1023)
+{ 
+val= map(val, 485, 1023, 100, 0);
+Serial.print("Soil Moisture:%"); 
+Serial.print(val);
+Serial.println(); 
+digitalWrite(IN1, LOW); 
+digitalWrite(IN2, HIGH); 
+analogWrite(EN_A, 255); 
+digitalWrite(6, HIGH); 
+digitalWrite(7, HIGH); 
+delay(500); 
+digitalWrite(6, LOW); 
+digitalWrite(7, LOW);
+for(int a = 0; a < 10; a++)
+{ 
+digitalWrite(7, HIGH); 
+delay(500);
+digitalWrite(7, LOW); 
+delay(500);
+}
+} 
+if(val>1023)
+{
+digitalWrite(6, HIGH); 
+digitalWrite(7, HIGH);
+delay(1000); 
+digitalWrite(6, LOW); 
+digitalWrite(7, LOW); 
+for(int a = 0; a < 10; a++)
+{ 
+digitalWrite(7, HIGH); 
+delay(200);
+digitalWrite(7, LOW); 
+delay(200);
+}
+}
+}
