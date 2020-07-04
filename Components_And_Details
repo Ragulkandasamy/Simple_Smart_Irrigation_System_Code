@@ -1,0 +1,58 @@
+1.	Arduino UNO
+2.	Soil moisture sensor
+3.	Liquid Crystal Display
+4.	Potentiometer
+5.	mh sensor
+6.	Breadboard
+7.	DC Motor
+8.	Connecting Wires
+
+ARDUINO UNO
+●	Arduino is used for programming and controlling the sensor, relay, motor speed and input and output of an system.
+●	In this project we have used Arduino UNO for programming and to receive signals from the humidity and moisture sensors.
+●	The Arduino UNO consists of input supply of 5V and ground, programming input, sending pin and receiving pin.
+●	An IC chip is used as a memory or input storage device for the Arduino UNO.
+●	The Arduino UNO board is mainly based on microcontroller ATMEGA 328P which has 32kb flash memory for sorting code.
+
+SOIL MOISTURISING SENSOR
+●	In this wireless based control system, this sensor helps to monitor the moisture of the soil.
+●		The sensor used here is LM393 . Normally, a moisturising sensor for soil includes four ports, namely A0, D0 , Ground and VCC.
+●	These sensors is connected to the controller unit directly.
+●		To find the Volumetric Water Content(VWC) a soil moisturising sensor is used. The power requirement is low here in this sensor.
+●	Some of the applications are Irrigation scheduling and water-plant-soil interaction studies.
+ 
+MOTOR DRIVER
+●		L298N Motor Driver Dual H-Bridge. The L298N Motor Driver Module is a high voltage Dual H-Bridge manufactured by ST company.
+●		H-bridge drivers are used to drive inductive loads that requires forward and reverse function with speed control such as DC Motor, and Stepper Motor.
+●	A motor driver is a small Current Amplifier whose function is to take a low-current control signal and then turn it into a higher-current signal that can drive a motor.
+  
+BUZZER
+•	A Buzzer or beeper is audio signalling device, which may be mechanical, electrochemical, piezoelectric (piezo or short).
+•	Typical users of buzzers or beepers includes alarm devices, timers and confirmation user input such as mouse click or keystroke.
+
+LIGHT EMITTING DIODE (LED)
+•	A light emitting diode is a semiconductor source electric bulb that emits light whenever the current flows through it.
+•	Electrons in the semiconductor recombine with the electron holes, releasing energy in the photons.
+ 
+MH SENSOR SERIES FLYING-FISH
+●		It is an analogue board contains a comparator and a port to give both an analog and digital(threshold output).
+●	The water/moisture detectors utilise a 2 pin header which can allow us to reuse the comparator board for any particular device we have available.
+
+BREADBOARD
+●	A breadboard is a device which helps in interconnecting the electronic components by inserting their lead terminal into the holes and connecting by the wire.
+
+ MOTOR
+●		Motor	is	electronic	device	which	converts	electrical	energy	into mechanical energy..
+●	Motor helps in pumping the water to irrigation field.
+●	DC motor is used for this system where it can take upto 5V.
+
+HW BATTERY
+•	HW Battery or High Watt Battery is electrochemical energy which is converted into electrical energy to run the DC motor when there is need more voltage supply to run the motor.
+
+ARDUINO IDE
+•	Arduino consists of both a physical programmable circuit board (often referred to  as  a  microcontroller)  and  a  piece  of  software, or IDE (Integrated Development Environment) that runs on your computer, used to write and upload computer code to the physical board.
+•	The Arduino language is merely a set of C/C++ functions
+
+
+
+
